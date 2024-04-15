@@ -1,0 +1,9 @@
+<div class="relative h-64 rounded md:h-80">
+  <h1 class="text-green-600 font-semibold text-lg"><%= title %></h1>
+
+  <%= render(DropdownComponent.new(label: "Click me")) do |component| %>
+    <%= component.with_header do %>
+      <h2 class="text-lg font-semibold text-green-800">Header</h2>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,13 @@
+<div class="relative z-50" data-controller="dropdown">
+  <div>
+    <button class="" data-dropdown-target="dots" data-action="click->dropdown#toggle click@window->dropdown#hide">
+      <%= tag.span label %>
+    </button>
+  </div>
+
+  <div class="easy-transition invisible absolute top-0 right-0 z-30 mt-8 rounded-lg bg-white p-8 opacity-0 shadow-md" data-dropdown-target="actionMenu">
+    <%= header if header %>
+    <%= body if body %>
+    <%= footer if footer %>
+  </div>
+</div>
